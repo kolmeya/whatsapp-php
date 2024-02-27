@@ -1,0 +1,30 @@
+{
+    "name": "kolmeya/whatsapp-php",
+    "description": "Kolmeya WhatsApp PHP SDK",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kolmeya\\WhatsApp\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.47",
+        "pestphp/pest": "^2.31",
+        "mockery/mockery": "^1.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/pest"
+        ]
+    }
+}
